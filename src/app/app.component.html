@@ -1,11 +1,13 @@
-<div class="container">
-    <div class="row p-3">
-        <div class="col-12">
-            <h1>Hola </h1>
-            <i class="far fa-address-card"></i>
-            <i class="far fa-address-card"></i>
-        </div>
-    </div>
+<div fxLayout='column'>
+  <div fxLayout="row" fxLayoutAlign="center" >
+    <app-welcome></app-welcome>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center">
+    <app-menu></app-menu>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center">
+    <router-outlet></router-outlet>
+  </div>
+
 </div>
 
-<router-outlet></router-outlet>

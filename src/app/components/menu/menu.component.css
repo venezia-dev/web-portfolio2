@@ -1,0 +1,65 @@
+
+
+.buttonMenu {
+    margin-top: 5em;
+}
+
+.circleMenu {
+    position:relative;
+    border-radius:50%;
+    object-fit:cover;
+    height: 200px;
+    width: 200px;
+    background: url('../../../assets/men.png') center no-repeat;
+    transform:scale(1);
+    -ms-transform:scale(1);
+    -moz-transform:scale(1);  
+    -webkit-transform:scale(1); 
+    -o-transform:scale(1); 
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out; 
+    -moz-transition: all 500ms ease-in-out; 
+    -ms-transition: all 500ms ease-in-out; 
+    -o-transition: all 500ms ease-in-out;   
+}
+
+.circleMenu:hover {
+    transform:scale(0.8);
+    -ms-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+    -webkit-transform:scale(0.8); 
+    -o-transform:scale(0.8); 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.circleButton {
+    position: relative;
+    border-radius:50%;
+    object-fit:cover;
+    margin: 2em;
+}
+
+
+
+/* Animate an item that has been dropped. */
+.cdk-drag-animating {
+    transition: transform 300ms cubic-bezier(0, 0, 0.2, 1);
+  }
+
+.cdk-drop-list-dragging {
+    transform:scale(0.8);
+    -ms-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+    -webkit-transform:scale(0.8); 
+    -o-transform:scale(0.8); 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+.cdk-drag-placeholder {
+    background-color: red;
+}
