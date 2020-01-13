@@ -23,16 +23,6 @@
     -o-transition: all 500ms ease-in-out;   
 }
 
-.circleMenu:hover {
-    transform:scale(0.8);
-    -ms-transform:scale(0.8);
-    -moz-transform:scale(0.8);
-    -webkit-transform:scale(0.8); 
-    -o-transform:scale(0.8); 
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-}
 
 .circleButton {
     position: relative;
