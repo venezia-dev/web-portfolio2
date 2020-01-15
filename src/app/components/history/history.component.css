@@ -1,0 +1,18 @@
+.circleMenu {
+    position:relative;
+    border-radius:50%;
+    object-fit:cover;
+    height: 200px;
+    width: 200px;
+    background: url('../../../assets/men.png') center no-repeat;
+    transform:scale(1);
+    -ms-transform:scale(1);
+    -moz-transform:scale(1);  
+    -webkit-transform:scale(1); 
+    -o-transform:scale(1); 
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out; 
+    -moz-transition: all 500ms ease-in-out; 
+    -ms-transition: all 500ms ease-in-out; 
+    -o-transition: all 500ms ease-in-out;   
+}

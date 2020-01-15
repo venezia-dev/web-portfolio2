@@ -1,0 +1,15 @@
+.footer {
+    text-align: center;
+    background-color: #401c3e;
+    border-radius: 5px;
+}
+
+.material-icons {
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    color: white;
+}
+
+.material-icons:hover {
+    color: orange;
+}

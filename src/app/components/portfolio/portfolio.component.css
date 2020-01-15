@@ -1,0 +1,95 @@
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bitter', serif, sans-serif;
+}
+
+.url:hover {
+    background-color:rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.webs {
+    margin-bottom: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+.web {
+    margin: 1em;
+    border-radius: 1em;
+}
+
+.web:hover {
+    box-shadow: 0 8px 8px 8px rgba(0,0,0,.2), 0 8px 8px 0 rgba(0,0,0,.14), 0 8px 8px 0 rgba(0,0,0,.12) !important;
+    transform: translate3d(0,0,0);
+    transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+}
+
+
+.mat-card-image:first-child {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.material-icons {
+    vertical-align: bottom;
+}
+
+.title {
+    float: left;
+    vertical-align: initial;
+}
+
+.year {
+    float: right;
+    font-size: 11px;
+    color:white;
+    background-color:rebeccapurple;
+    font-family: 'Bitter', serif, sans-serif;
+    padding: 4px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.like {
+    font-size: 15px;
+    color: white;
+    background-color:orange;
+    font-family: 'Bitter', serif, sans-serif;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 4px;
+}
+
+.button {
+    font-size: 16px;
+    margin-left: 4px;
+}
+
+.button:hover {
+    background-color:rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+
+
+
+@media (min-width: 960px) and (max-width: 1300px) { 
+    .url {
+        white-space: nowrap;
+        font-size: 0.8em;
+    }
+}
+
+
+@media (max-width: 960px) { 
+    .url {
+        white-space: nowrap;
+        font-size: 0.8em;
+    }
+}

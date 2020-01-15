@@ -1,0 +1,18 @@
+
+.close {
+    float: right;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+a {
+    color: rebeccapurple;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}

@@ -1,4 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html{ 
+    background-color:#ffebcd;  /* fallback for old browsers */
+    margin: 0;
+    padding: 0;
+}
+
+body {  
+    font-family: 'Bitter', serif, sans-serif;
+    border-radius: 1em;
+    background-color: #401c3e;
+    height: 94vh;
+    margin: 2vh;
+    padding: 1vh;
+}
+
+@media (max-width: 800px) {
+    body {
+        height: 100%;
+    }
+}
+
+@media (max-height: 800px) {
+    body {
+        height: 100%;
+    }
+}

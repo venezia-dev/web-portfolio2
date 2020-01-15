@@ -1,0 +1,13 @@
+.title {
+    text-align: center;
+}
+
+
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    h3 {
+        font-size: 1em;
+        margin: 0px;
+    }
+
+}

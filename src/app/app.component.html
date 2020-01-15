@@ -1,13 +1,26 @@
-<div fxLayout='column'>
-  <div fxLayout="row" fxLayoutAlign="center" >
+
+<div fxLayout="row" fxLayout.xs='column' fxLayout.sm='column' fxLayoutAlign="center center" class="content">
+  <div class="content-1" fxFlex="33">
     <app-welcome></app-welcome>
+    <app-info></app-info>
   </div>
-  <div fxLayout="row" fxLayoutAlign="center">
-    <app-menu></app-menu>
-  </div>
-  <div fxLayout="row" fxLayoutAlign="center">
+  <div class="content-2"  fxFlex="67">
+    <footer fxLayout="row" fxLayoutAlign="center end">
+      <app-footer></app-footer>
+    </footer>
     <router-outlet></router-outlet>
   </div>
-
 </div>
 
+
+<!--
+<footer fxLayout="row" fxLayoutAlign="center center">
+  <app-footer></app-footer>
+</footer>
+   <div fxLayout="row" fxLayoutAlign="center center" cdkDrag>
+      <app-welcome *ngIf="isIndexRoute()"></app-welcome>
+      <app-header *ngIf="!isIndexRoute()"></app-header>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center">
+      <router-outlet></router-outlet>
+    </div>-->

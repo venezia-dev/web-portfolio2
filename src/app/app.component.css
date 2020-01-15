@@ -1,0 +1,53 @@
+.content-1 {
+    background-color: white;  
+    height: 94vh;
+    width: 100%;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.content-2 {
+    background-color:#fff9f0;  
+    height: 94vh;
+    width: 100%;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+footer {
+    position: sticky;
+    top: -1px;
+    width: 100%;
+    z-index: 1;
+}
+
+.button {
+    line-height: 15px;
+}
+
+
+@media (max-width: 960px) { 
+    .content-1 {
+        height: 100%;
+        width: 100%;
+        border-radius: 1em;
+    }
+    
+    .content-2 {
+        height: 100%;
+        width: 100%;
+        border-radius: 1em;
+        margin-top: 0.7em;
+    }
+    
+    footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1;
+            text-align: center;  
+            right: 0;
+            left: 0;
+    }
+}
+
