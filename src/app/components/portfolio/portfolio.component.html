@@ -5,7 +5,7 @@
     
     <div fxLayout="row wrap"  fxLayout.xs="column" fxLayoutAlign="center" class="webs">
         <mat-card class="web" fxFlex="20%" fxFlex.xs="100%" fxFlex.sm="100%" *ngFor="let web of webs">
-               <a (click)="openDialog(web)"><img mat-card-image src="../../../assets/webimg/{{web.img}}" alt="{{web.title}}"></a>
+               <a (click)="openDialog(web)" type="button"><img mat-card-image src="../../../assets/webimg/{{web.img}}" alt="{{web.title}}"></a>
             <mat-card-title> 
                 <span class="title"><i class="material-icons">favorite_border</i></span>
                 <span class="like">25</span>
