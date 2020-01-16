@@ -15,7 +15,7 @@ export class AppsComponent implements OnInit {
     { "title": "Calcular Presupuesto", "url": "calcular-presupuesto.herokuapp.com", "year": "2019", "img": "carlcularpresupuestop.png", "imgGrande": "appimg/carlcularpresupuesto.png" }
   ]
 
-  appR: object;
+  appR: any;
 
 
   constructor(public dialog: MatDialog,
