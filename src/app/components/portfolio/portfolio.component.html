@@ -1,21 +1,23 @@
 <div *ngIf="!isIndexRoute()">
-    <div fxLayout="row" fxLayoutAlign="center" >
+    <div fxLayout="row" fxLayoutAlign="center">
         <h2>Portfolio</h2>
     </div>
-    
-    <div fxLayout="row wrap"  fxLayout.xs="column" fxLayoutAlign="center" class="webs">
+
+    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" class="webs">
         <mat-card class="web" fxFlex="20%" fxFlex.xs="100%" fxFlex.sm="100%" *ngFor="let web of webs">
-               <a (click)="openDialog(web)" type="button"><img mat-card-image src="../../../assets/webimg/{{web.img}}" alt="{{web.title}}"></a>
-            <mat-card-title> 
-                <span class="title"><i class="material-icons">favorite_border</i></span>
-                <span class="like">25</span>
-                <a href="{{web.url}}" class="button" fxHide.lt-md fxHide.xl><i class="material-icons">
-                    language
+            <a href="{{web.url}}" matTooltip="Abrir Web" class="link" fxHide.lt-md fxHide.xl><i class="material-icons">
+                    link
                 </i></a>
+            <a (click)="openDialog(web)" type="button"><img mat-card-image src="../../../assets/webimg/{{web.img}}"
+                    matTooltip="Abrir Vista Previa" alt="{{web.title}}"></a>
+            <mat-card-title>
+                <img src="../../../assets/{{web.code1}}">
+                <img src="../../../assets/{{web.code2}}">
                 <span class="year">{{web.year}}</span>
             </mat-card-title>
-            <mat-card-subtitle> 
-                <a href="{{web.url}}" class="url" fxHide fxShow.lt-md fxShow.xl >{{web.url}}</a>
+            <mat-card-subtitle>
+                <a href="http://{{web.url}}/" matTooltip="Abrir Web" target="_blank" class="url" fxHide fxShow.lt-md
+                    fxShow.xl>{{web.url}}</a>
             </mat-card-subtitle>
         </mat-card>
     </div>
@@ -24,22 +26,17 @@
 
 
 <mat-card class="web" *ngIf="isIndexRoute()">
-    <a (click)="openDialog(webR)"><img mat-card-image src="../../../assets/webimg/{{webR.img}}" alt="{{webR.title}}"></a>
- <mat-card-title> 
-     <span class="title"><i class="material-icons">favorite_border</i></span>
-     <span class="like">25</span>
-     <a href="{{webR.url}}" class="button" fxHide.lt-md fxHide.xl><i class="material-icons">
-         language
-     </i></a>
-     <span class="year">{{webR.year}}</span>
- </mat-card-title>
- <mat-card-subtitle> 
-     <a href="{{webR.url}}" class="url" fxHide fxShow.lt-md fxShow.xl >{{webR.url}}</a>
- </mat-card-subtitle>
+    <a href="{{webR.url}}" matTooltip="Abrir Web" class="link" fxHide.lt-md fxHide.xl><i class="material-icons">
+            link
+        </i></a>
+    <a (click)="openDialog(webR)"><img mat-card-image src="../../../assets/webimg/{{webR.img}}"
+            matTooltip="Abrir Vista Previa" alt="{{webR.title}}"></a>
+    <mat-card-title>
+        <img src="../../../assets/{{webR.code1}}">
+        <img src="../../../assets/{{webR.code2}}">
+        <span class="year">{{webR.year}}</span>
+    </mat-card-title>
+    <mat-card-subtitle>
+        <a href="{{webR.url}}" class="url" matTooltip="Abrir Web" fxHide fxShow.lt-md fxShow.xl>{{webR.url}}</a>
+    </mat-card-subtitle>
 </mat-card>
-
-
-
-
-
-

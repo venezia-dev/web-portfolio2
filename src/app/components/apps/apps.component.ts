@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 export class AppsComponent implements OnInit {
 
   apps = [
-    { "title": "Angular CRUD", "url": "listado-clientes-crud-angular.herokuapp.com", "year": "2020", "img": "listadoclientep.png", "imgGrande": "appimg/listadocliente.png" },
-    { "title": "Calcular Presupuesto", "url": "calcular-presupuesto.herokuapp.com", "year": "2019", "img": "carlcularpresupuestop.png", "imgGrande": "appimg/carlcularpresupuesto.png" }
+    { "title": "CRUD Listado De Clientes", "url": "listado-clientes-crud-angular.herokuapp.com", "year": "2020", "img": "listadoclientep.png", "imgGrande": "appimg/listadocliente.png", "code1": "angularx30.png", "code2": "nodejsx30.png"},
+    { "title": "Calcular Presupuesto", "url": "calcular-presupuesto.herokuapp.com", "year": "2019", "img": "carlcularpresupuestop.png", "imgGrande": "appimg/carlcularpresupuesto.png", "code1": "angularx30.png", "code2": "nodejsx30.png" }
   ]
 
   appR: any;

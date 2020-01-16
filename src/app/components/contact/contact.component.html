@@ -1,9 +1,68 @@
-<div class="contacto">
-    <h2><u>Contacto</u></h2>
-    <a href="mailto:venezia.leandro@gmail.com" class="mail">Venezia.leandro@gmail.com</a>
+<div fxLayout="row" fxLayoutAlign="center">
+    <h2>Contacto</h2>
 </div>
-<div class="contact">
-        <a href="https://github.com/venezia-dev" target="_blank" class="button"><img src="../../../assets/githubx30.png" class="imgbuttom"></a>
-        <a href="https://www.linkedin.com/in/leandrovenezia/" target="_blank" class="button"><img src="../../../assets/lnx30.png" class="imgbuttom"></a>
-        <a href="https://www.instagram.com/lea_venezia/" target="_blank" class="button"><img src="../../../assets/instax30.png" class="imgbuttom"></a>
+
+<div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center">
+    <div fxLayout="column" fxFlex="50" fxLayoutAlign="center center">
+        <mat-card class="contact">
+         <mat-card-header>
+             <div mat-card-avatar class="header-image"></div>
+             <mat-card-title>Información</mat-card-title>
+             <mat-card-subtitle>Contáctame!</mat-card-subtitle>
+         </mat-card-header>
+         <mat-card-content>
+             <mat-list>
+                 <mat-list-item >
+                   <mat-icon mat-list-icon>gps_fixed</mat-icon>
+                   <h4 mat-line>Ubicación</h4>
+                   <p mat-line>Ciudad De Buenos Aires - Argentina </p>
+                 </mat-list-item>
+                 <mat-list-item >
+                     <mat-icon mat-list-icon>email</mat-icon>
+                     <h4 mat-line>Email</h4>
+                     <p mat-line><a href="mailto:venezia.leandro@gmail.com" target="_blank" class="url">Venezia.leandro@gmail.com</a></p>
+                 </mat-list-item>
+                 <mat-list-item >
+                     <mat-icon mat-list-icon>description</mat-icon>
+                     <h4 mat-line>LinkedIn</h4>
+                     <p mat-line><a href="https://www.linkedin.com/in/leandrovenezia/" target="_blank"class="url">linkedin.com/in/leandrovenezia/</a></p>
+                 </mat-list-item>
+                 <mat-list-item >
+                     <mat-icon mat-list-icon>insert_photo</mat-icon>
+                     <h4 mat-line>Instagram</h4>
+                     <p mat-line><a href="https://www.instagram.com/lea_venezia/" target="_blank" class="url">instagram.com/lea_venezia/</a></p>
+                 </mat-list-item>
+             </mat-list>
+         </mat-card-content>
+        </mat-card>
+
+     </div>
+    <div fxLayout="column" fxFlex="50" fxLayoutAlign="center center">
+        <mat-card class="github">
+            <mat-card-header>
+                <div mat-card-avatar class="header-image"></div>
+                <mat-card-title>GitHub</mat-card-title>
+                <mat-card-subtitle>Usuario: <a href="{{github?.html_url}}" class="url">{{github?.login}}</a></mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="{{github?.avatar_url}}" alt="Foto User Github">
+            <mat-card-content class="status">
+                <span class="stats">
+                    {{github?.followers}}
+                    <p>Seguidores</p>
+                </span>
+                <span class="stats">
+                    {{github?.following}}
+                    <p>Siguiendo</p>
+                </span>
+                <span class="stats">
+                    {{github?.public_repos}}
+                    <p>Repositorios</p>
+                </span>
+            </mat-card-content>
+            <mat-card-actions>
+                <a href="{{github?.html_url}}"><button mat-raised-button color="primary">Seguime!</button></a>
+            </mat-card-actions>
+        </mat-card>
+
+    </div>
 </div>

@@ -42,6 +42,19 @@ a{
     vertical-align: initial;
 }
 
+.link {
+    position: absolute;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.link:hover {
+    background-color: rebeccapurple;
+    padding: 5px;
+    border-radius: 20%;
+}
+
 .year {
     float: right;
     font-size: 11px;

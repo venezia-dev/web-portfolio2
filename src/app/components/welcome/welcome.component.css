@@ -26,8 +26,16 @@ h2 {
 
 @media (min-width: 960px) and (max-width: 1400px) {
     .circleMenu {
-        height: 200px;
-        width: 200px;
+        height: 180px;
+        width: 180px;
+    }
+}
+
+
+@media (max-width: 960px)  {
+    .circleMenu {
+        height: 220px;
+        width: 220px;
     }
 }
 

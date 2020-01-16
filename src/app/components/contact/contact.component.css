@@ -1,50 +1,55 @@
-.contacto {
-    text-align: center;
+.github {
+    max-width: 60%;
+    height: 100%;
+    border-radius: 1em;
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
 }
 
-.mail{
+.contact {
+    max-width: 100%;
+    border-radius: 1em;
+    position: relative;
+    padding: 4em;
+}
+.url{
     text-decoration: none;
     color: black;
     font-family: 'Bitter', serif, sans-serif;
-    margin: 1em;
 }
 
-.mail:hover{
+.url:hover{
     background-color:rebeccapurple;
     color: white;
     border-radius: 5px;
     padding: 6px;
 }
 
-h2 {
-    margin: 0.7em;
+p {
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
-.contact {
+.header-image {
+    background-image: url('../../../assets/logo12.png');
+    background-size: cover;
+}
+
+.status {
+    display: block;
     text-align: center;
-    margin-top: 0.7em;
+    margin: 0;
 }
 
-.button {
-    text-decoration: none;
-    color: black;
+.stats {
+    margin:10px;
+    display: inline-table;
+    text-align: center;
     font-family: 'Bitter', serif, sans-serif;
-    margin: 1em;
-}
-
-.imgbutton {
-    border-radius: 30%;
-    background-color: white;
+    background-color: #8dc1b9;
+    color: white;
+    border-radius: 5px;
     padding: 5px;
-}
-
-.imgbutton:hover {
-    background-color: orange;
-}
-
-@media (max-width: 960px) {
-    h2, h3 {
-        font-size: 1em;
-        margin: 5px;
-    }
 }

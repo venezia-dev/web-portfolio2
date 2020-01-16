@@ -5,35 +5,35 @@
     
     <div fxLayout="row wrap"  fxLayout.xs="column" fxLayoutAlign="center" class="webs">
         <mat-card class="web" fxFlex="20%" fxFlex.xs="100%" fxFlex.sm="100%" *ngFor="let app of apps">
-               <a (click)="openDialog(app)"><img mat-card-image src="../../../assets/appimg/{{app.img}}" alt="{{app.title}}"></a>
+              <a href="{{app.url}}" matTooltip="Abrir Web" class="link" fxHide.lt-md fxHide.xl><i class="material-icons">
+                link
+            </i></a>
+               <a (click)="openDialog(app)"><img mat-card-image src="../../../assets/appimg/{{app.img}}" matTooltip="Abrir Vista Previa" alt="{{app.title}}"></a>
             <mat-card-title> 
-                <span class="title"><i class="material-icons">favorite_border</i></span>
-                <span class="like">25</span>
-                <a href="{{app.url}}" class="button" fxHide.lt-md fxHide.xl><i class="material-icons">
-                    language
-                </i></a>
+                <img src="../../../assets/{{app.code1}}">
+                <img src="../../../assets/{{app.code2}}">
                 <span class="year">{{app.year}}</span>
             </mat-card-title>
             <mat-card-subtitle> 
     
-                <a href="{{app.url}}" class="url" fxHide fxShow.lt-md fxShow.xl >{{app.title}}</a>
+                <a href="{{app.url}}" class="url" matTooltip="Abrir Web" fxHide fxShow.lt-md fxShow.xl >{{app.title}}</a>
             </mat-card-subtitle>
         </mat-card>
     </div>
 </div>
 
 <mat-card class="web" *ngIf="isIndexRoute()">
-    <a (click)="openDialog(appR)"><img mat-card-image src="../../../assets/appimg/{{appR.img}}" alt="{{appR.title}}"></a>
+    <a href="{{appR.url}}" matTooltip="Abrir Web" class="link" fxHide.lt-md fxHide.xl><i class="material-icons">
+        link
+    </i></a>
+    <a (click)="openDialog(appR)"><img mat-card-image src="../../../assets/appimg/{{appR.img}}" matTooltip="Abrir Vista Previa" alt="{{appR.title}}"></a>
  <mat-card-title> 
-     <span class="title"><i class="material-icons">favorite_border</i></span>
-     <span class="like">25</span>
-     <a href="{{appR.url}}" class="button" fxHide.lt-md fxHide.xl><i class="material-icons">
-         language
-     </i></a>
+    <img src="../../../assets/{{appR.code1}}">
+    <img src="../../../assets/{{appR.code2}}">
      <span class="year">{{appR.year}}</span>
  </mat-card-title>
  <mat-card-subtitle> 
-     <a href="{{appR.url}}" class="url" fxHide fxShow.lt-md fxShow.xl >{{appR.title}}</a>
+     <a href="{{appR.url}}" class="url" matTooltip="Abrir Web" fxHide fxShow.lt-md fxShow.xl >{{appR.title}}</a>
  </mat-card-subtitle>
 </mat-card>
 

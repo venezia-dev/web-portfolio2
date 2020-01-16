@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { HistoryComponent } from './components/history/history.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AppsComponent } from './components/apps/apps.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'historia', component: HistoryComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'apps', component: AppsComponent },
+  { path: 'contacto', component: ContactComponent }
 ];
 
 @NgModule({

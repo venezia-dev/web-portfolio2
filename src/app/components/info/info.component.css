@@ -6,10 +6,53 @@ img {
     margin: 2px
 }
 
-@media (min-width: 800px) and (max-width: 1200px) {
-    h3 {
+.contact {
+    padding: 1.5em;
+}
+
+.contacto {
+    text-align: center;
+}
+
+.mail{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bitter', serif, sans-serif;
+    margin: 1em;
+}
+
+.mail:hover{
+    background-color:rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 0.7em;
+}
+
+.button {
+    margin: 1em;
+    padding: 2px;
+    border-radius: 30%;
+}
+
+.button:hover {
+    background-color: orange;
+    padding: 2px;
+    border-radius: 30%;
+}
+
+
+@media (max-width: 960px) {
+    h2, h3 {
         font-size: 1em;
-        margin: 0px;
+        margin: 5px;
     }
 
+    .contact {
+        padding: 1em;
+    }
 }
