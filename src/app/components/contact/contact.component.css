@@ -2,34 +2,49 @@
     text-align: center;
 }
 
-h2, h3 {
-    margin: 5px;
+.mail{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bitter', serif, sans-serif;
+    margin: 1em;
+}
+
+.mail:hover{
+    background-color:rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+h2 {
+    margin: 0.7em;
 }
 
 .contact {
-    border-radius: 1em;
     text-align: center;
-    background-color:orange;
-    padding:0.7em;
-    margin-bottom: 0.7em;
+    margin-top: 0.7em;
 }
 
-.mat-card-content {
-    background-color: white;
-    border-radius: 1em;
-    padding: 2px;
+.button {
+    text-decoration: none;
+    color: black;
+    font-family: 'Bitter', serif, sans-serif;
+    margin: 1em;
 }
 
-.buttom {
-    margin: 5px;
-}
-
-.imgbuttom {
+.imgbutton {
     border-radius: 30%;
     background-color: white;
     padding: 5px;
 }
 
-.imgbuttom:hover {
+.imgbutton:hover {
     background-color: orange;
+}
+
+@media (max-width: 960px) {
+    h2, h3 {
+        font-size: 1em;
+        margin: 5px;
+    }
 }
