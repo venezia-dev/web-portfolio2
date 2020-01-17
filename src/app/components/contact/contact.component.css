@@ -73,4 +73,9 @@ p {
         font-size: 1em;
         margin: 2px;
     }
+
+    .github {
+        max-width: 50%;
+
+    }
 }

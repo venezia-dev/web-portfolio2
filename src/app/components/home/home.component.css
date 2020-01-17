@@ -52,8 +52,40 @@ h4 {
 }
 
 
-@media (min-width: 960px) and (max-width: 1300px) { 
+@media (min-width: 960px) and (max-width: 1700px) { 
     h3 {
         font-size: 1em;
     }
+
+    .title2 {
+        margin-top: 1em;
+    }
+
+    .instagram {
+        width: 80%;
+        display: flex;
+    }
+
+    .insta {
+        width: 100%;
+    }
 }
+
+@media (max-width: 960px)  { 
+    h3 {
+        font-size: 1em;
+    }
+
+    .title2 {
+        margin-top: 1em;
+    }
+
+    .instagram {
+        width: 80%;
+    }
+
+    .insta {
+        width: 30%;
+    }
+}
+

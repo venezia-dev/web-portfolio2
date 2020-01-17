@@ -56,3 +56,14 @@ img {
         padding: 1em;
     }
 }
+
+@media (min-width: 960px) and (max-width: 1500px) {
+    h2, h3 {
+        font-size: 1em;
+        margin: 5px;
+    }
+
+    .contact {
+        padding: 1em;
+    }
+}
