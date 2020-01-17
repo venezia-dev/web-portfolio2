@@ -1,6 +1,5 @@
 .github {
     max-width: 70%;
-    height: 100%;
     border-radius: 1em;
     position: relative;
     margin: 1em;
@@ -13,6 +12,10 @@
     position: relative;
     padding: 2em;
     margin: 1em;
+}
+
+img {
+    margin: 0 -16px -5px -16px;
 }
 
 .url{
@@ -53,4 +56,21 @@ p {
     color: white;
     border-radius: 5px;
     padding: 5px;
+}
+
+
+.hosting {
+    position: relative;
+}
+
+.icon {
+    margin: 2px;
+}
+
+
+@media (min-width: 960px) and (max-width: 1300px) { 
+    .stats {
+        font-size: 1em;
+        margin: 2px;
+    }
 }

@@ -5,31 +5,32 @@
 </div>
 
 <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center">
-    <div fxLayout="column" fxFlex="50" fxLayoutAlign="start center">
-        <h3>Webs</h3>
+    <div fxLayout="column" fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="80%" fxLayoutAlign="center">
+        <h4>Webs<span class="aste">*</span></h4>
         <app-portfolio></app-portfolio>
-        <h3>Apps</h3>
-        <app-apps></app-apps>
-        <p><u>*Webs y Apps Aleatorias de mi Portfolio</u></p>
     </div>
-    <div fxLayout="column" fxFlex="50" fxLayoutAlign="start center">
-        <h3>Instagram Feed</h3>
-        <mat-card class="instagram">
-            <div class="insta">
-                <img src="https://www.instagram.com/p/B7Z4v48Fr-5/media/?size=t" class="feed">
-                <img src="https://www.instagram.com/p/B7Z4miMF9A0/media/?size=t" class="feed">
-                <img src="https://www.instagram.com/p/B7Z4j-2FRbF/media/?size=t" class="feed">
-                <img src="https://www.instagram.com/p/B7Z4gHbljMs/media/?size=t" class="feed">
-                <img src="https://www.instagram.com/p/B7Z4bqnlP6S/media/?size=t" class="feed">
-                <img src="https://www.instagram.com/p/B7ZX1JiFv4Y/media/?size=t" class="feed">
-            </div>
-        </mat-card>
-        <div fxLayout="row" fxLayoutAlign="center" style="font-weight: bold; margin-top: 1em;">
-            Hosting: <img src="../../../assets/herokux30.png" matTooltip="Heroku">
-            Code: <img src="../../../assets/angularx30.png" matTooltip="Angular">
-        </div>
+    <div fxLayout="column" fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="80%" fxLayoutAlign="center">
+        <h4>Apps<span class="aste">*</span></h4>
+        <app-apps></app-apps>
+    </div>
+    <div fxLayout="column" fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="80%" fxLayoutAlign="center center">
+        <h4><span class="aste">*</span>Webs y Apps aleatorias desde mi portfolio</h4>
+        <a routerLink="/portfolio" style="margin-top: 5px;"><button mat-raised-button color="primary">Ver más</button></a>
     </div>
 </div>
 
+<div fxLayout="row" fxLayoutAlign="center center" class="title2">
+    <h3>Instagram Feed</h3>
+</div>
 
+<div fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="instagram">
+        <span *ngFor="let insta of instagram">
+            <a href="{{insta.img}}" target="_black" ><img src="{{insta.img}}/media/?size=t" class="insta"></a>
+        </span>
+    </mat-card>
+</div>
 
+<div fxLayout="row" fxLayoutAlign="center center" class="title2">
+    <a href="https://www.instagram.com/lea_venezia/" matTooltip="@lea_venezia"><button mat-raised-button color="primary">Seguime!</button></a>
+</div>

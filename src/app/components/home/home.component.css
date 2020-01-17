@@ -1,9 +1,11 @@
-h2 {
+h3 {
+    margin: 1px;
     text-align: center;
 }
 
-h3 {
-    margin: 5px;
+h4 {
+    margin: 1px;
+    text-align: center;
 }
 
 .title {
@@ -11,11 +13,47 @@ h3 {
     margin: 0.8em;
 }
 
-.instagram {
-    border-radius: 1em;
-    width: 90%;
+.title2 {
+    margin: 2px;
 }
 
-.insta {
+.aste {
+    color: rebeccapurple;
+}
+
+.instagram {
+    border-radius: 1em;
+    width: 80%;
     text-align: center;
+    margin: 1em;
+}
+
+.insta:hover {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+@media (min-width: 960px) and (max-width: 1300px) { 
+    h3 {
+        font-size: 1em;
+    }
 }

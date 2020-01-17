@@ -11,9 +11,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class PortfolioComponent implements OnInit {
 
   webs = [
-  {"title":"PacmanWeb", "url":"Proximamente","year":"2020","img":"pac.png","imgGrande": "webimg/pac.png", "code1": "htmlx30.png", "code2": "bootstrapx30.png"},
+  {"title":"VeneziaDev1", "url":"Proximamente","year":"2019","img":"veneziadev1p.png","imgGrande": "webimg/veneziadev1.png", "code1": "angularx30.png", "code2": "nodejsx30.png"},
   {"title":"VivaLugano", "url":"www.vivalugano.com.ar","year":"2019","img":"vivaluganop.jpg","imgGrande": "webimg/vivalugano.jpg", "code1": "htmlx30.png", "code2": "bootstrapx30.png"},
-  {"title":"WhatDay", "url":"www.whatday.com","year":"2019","img":"whatdayp.png","imgGrande": "webimg/whatday.png", "code1": "nodejsx30.png", "code2": "mysqlx30.png"},
+  {"title":"WhatDay", "url":"www.whatday.is","year":"2019","img":"whatdayp.png","imgGrande": "webimg/whatday.png", "code1": "nodejsx30.png", "code2": "mysqlx30.png"},
   {"title":"Noveraz", "url":"www.noveraz.com","year":"2018","img":"noverazp.png","imgGrande": "webimg/noveraz.jpg", "code1": "htmlx30.png", "code2": "bootstrapx30.png"},
   {"title":"Prisma Constructora SRL", "url":"www.prismaconstructorasrl.com","year":"2018","img":"prismap.png","imgGrande": "webimg/prisma.jpg", "code1": "htmlx30.png", "code2": "bootstrapx30.png"},
   {"title":"InsumosIT", "url":"www.insumosit.com.ar","year":"2017","img":"insumositp.jpg","imgGrande": "webimg/insumosit.jpg", "code1": "htmlx30.png", "code2": "bootstrapx30.png"}
