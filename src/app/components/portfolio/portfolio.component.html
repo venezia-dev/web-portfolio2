@@ -9,7 +9,14 @@
             <a href="{{web.url}}" matTooltip="Abrir Web" class="link" fxHide.lt-md fxHide.xl><i class="material-icons">
                     link
                 </i></a>
-            <a (click)="openDialog(web)" type="button"><img mat-card-image src="../../../assets/webimg/{{web.img}}"
+            <div fxHide fxShow.lt-md>
+                <a (click)="openDialog(web)" matTooltip="Abrir Vista Previa" class="zoom"><i class="material-icons">
+                    zoom_in
+                </i></a>
+                <img mat-card-image src="../../../assets/webimg/{{web.img}}"
+                 alt="{{web.title}}">
+            </div>
+            <a (click)="openDialog(web)" type="button" fxHide.lt-md><img mat-card-image src="../../../assets/webimg/{{web.img}}"
                     matTooltip="Abrir Vista Previa" alt="{{web.title}}"></a>
             <mat-card-title>
                 <img src="../../../assets/{{web.code1}}">
@@ -27,10 +34,16 @@
 
 
 <mat-card class="webR" *ngIf="isIndexRoute()">
-    <a href="{{webR.url}}" matTooltip="Abrir Web" class="link" fxHide.lt-md fxHide.xl><i class="material-icons">
+        <a href="{{webR.url}}" matTooltip="Abrir Web" class="link" fxHide.lt-md fxHide.xl><i class="material-icons">
             link
         </i></a>
-    <a (click)="openDialog(webR)"><img mat-card-image src="../../../assets/webimg/{{webR.img}}"
+        <div fxHide fxShow.lt-md>
+            <a (click)="openDialog(webR)" matTooltip="Abrir Vista Previa" class="zoom"><i class="material-icons">
+                zoom_in
+            </i></a>
+            <img mat-card-image src="../../../assets/webimg/{{webR.img}}" alt="{{webR.title}}">
+        </div>
+        <a (click)="openDialog(webR)" fxHide.lt-md><img mat-card-image src="../../../assets/webimg/{{webR.img}}"
             matTooltip="Abrir Vista Previa" alt="{{webR.title}}"></a>
     <mat-card-title>
         <img src="../../../assets/{{webR.code1}}">
