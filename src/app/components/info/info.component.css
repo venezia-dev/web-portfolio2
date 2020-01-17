@@ -30,7 +30,6 @@ img {
 
 .contact {
     text-align: center;
-    margin-top: 0.7em;
 }
 
 .button {
@@ -52,9 +51,6 @@ img {
         margin: 5px;
     }
 
-    .contact {
-        padding: 1em;
-    }
 }
 
 @media (min-width: 960px) and (max-width: 1500px) {
@@ -63,7 +59,4 @@ img {
         margin: 5px;
     }
 
-    .contact {
-        padding: 1em;
-    }
 }
