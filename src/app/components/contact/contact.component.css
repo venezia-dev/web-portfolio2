@@ -3,15 +3,16 @@
     height: 100%;
     border-radius: 1em;
     position: relative;
-    margin-bottom: 1em;
+    margin: 1em;
     padding: 1em;
 }
 
 .contact {
-    max-width: 60%;
+    max-width: 100%;
     border-radius: 1em;
     position: relative;
-    padding: 4em;
+    padding: 2em;
+    margin: 1em;
 }
 
 .url{

@@ -1,7 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { WebsComponent } from '../dialogs/webs.component';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio',
@@ -21,7 +21,8 @@ export class PortfolioComponent implements OnInit {
   webR: any;
 
   constructor(public dialog: MatDialog,
-    private router: Router) { }
+    private router: Router,
+    private route:ActivatedRoute) { }
 
   ngOnInit() {
     this.webRandom()
