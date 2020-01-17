@@ -4,43 +4,32 @@
     </h3>
 </div>
 
-<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center" class="apps">
-    <div fxFlex="25" class="web">
+<div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center">
+    <div fxLayout="column" fxFlex="50" fxLayoutAlign="start center">
+        <h3>Webs</h3>
         <app-portfolio></app-portfolio>
-    </div>
-    <div fxFlex="25" class="app">
+        <h3>Apps</h3>
         <app-apps></app-apps>
+        <p><u>*Webs y Apps Aleatorias de mi Portfolio</u></p>
+    </div>
+    <div fxLayout="column" fxFlex="50" fxLayoutAlign="start center">
+        <h3>Instagram Feed</h3>
+        <mat-card class="instagram">
+            <div class="insta">
+                <img src="https://www.instagram.com/p/B7Z4v48Fr-5/media/?size=t" class="feed">
+                <img src="https://www.instagram.com/p/B7Z4miMF9A0/media/?size=t" class="feed">
+                <img src="https://www.instagram.com/p/B7Z4j-2FRbF/media/?size=t" class="feed">
+                <img src="https://www.instagram.com/p/B7Z4gHbljMs/media/?size=t" class="feed">
+                <img src="https://www.instagram.com/p/B7Z4bqnlP6S/media/?size=t" class="feed">
+                <img src="https://www.instagram.com/p/B7ZX1JiFv4Y/media/?size=t" class="feed">
+            </div>
+        </mat-card>
+        <div fxLayout="row" fxLayoutAlign="center" style="font-weight: bold; margin-top: 1em;">
+            Hosting: <img src="../../../assets/herokux30.png" matTooltip="Heroku">
+            Code: <img src="../../../assets/angularx30.png" matTooltip="Angular">
+        </div>
     </div>
 </div>
 
-<div fxLayout="row" fxLayoutAlign="center center">
-    <p><u>*Webs y Apps Aleatorias de mi Portfolio</u></p>
-    <a routerLink="/portfolio" class="mas"><button mat-raised-button color="primary">Ver Mas</button></a>
-</div>
-
-
-<div fxLayout="row" fxLayoutAlign="center center" class="social">
-    <mat-card class="web">
-        <mat-card-title>FALTA PONER WIDGET INSTAGRAM</mat-card-title>
-        <mat-card-content>
-            <img src="https://www.instagram.com/p/B7ZX1JiFv4Y/media/?size=t">
-            <img src="https://www.instagram.com/p/B7ZX1JiFv4Y/media/?size=t">
-            <img src="https://www.instagram.com/p/B7ZX1JiFv4Y/media/?size=t">
-            <img src="https://www.instagram.com/p/B7ZX1JiFv4Y/media/?size=t">
-            <img src="https://www.instagram.com/p/B7ZX1JiFv4Y/media/?size=t">
-            <img src="https://www.instagram.com/p/B7ZX1JiFv4Y/media/?size=t">
-            <img src="https://www.instagram.com/p/B7ZX1JiFv4Y/media/?size=t">
-            <img src="https://www.instagram.com/p/B7ZX1JiFv4Y/media/?size=t">
-            <img src="https://www.instagram.com/p/B7ZX1JiFv4Y/media/?size=t">
-            <img src="https://www.instagram.com/p/B7ZX1JiFv4Y/media/?size=t">
-        </mat-card-content>
-    </mat-card>
-</div>
-
-
-<div fxLayout="row" fxLayoutAlign="center center" style="font-weight: bold; margin-top: 1em;">
-    Hosting: <img src="../../../assets/herokux30.png" matTooltip="Heroku">
-    Code: <img src="../../../assets/angularx30.png" matTooltip="Angular">
-</div>
 
 

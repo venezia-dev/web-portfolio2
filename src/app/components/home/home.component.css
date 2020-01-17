@@ -2,10 +2,20 @@ h2 {
     text-align: center;
 }
 
-.title {
-    text-align: center;
+h3 {
+    margin: 5px;
 }
 
-.mas {
-    margin-left: 5px;
+.title {
+    text-align: center;
+    margin: 0.8em;
+}
+
+.instagram {
+    border-radius: 1em;
+    width: 90%;
+}
+
+.insta {
+    text-align: center;
 }
