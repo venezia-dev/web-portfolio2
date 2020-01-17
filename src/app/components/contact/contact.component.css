@@ -1,19 +1,19 @@
 .github {
-    max-width: 60%;
+    max-width: 70%;
     height: 100%;
     border-radius: 1em;
     position: relative;
-    margin-top: 1em;
     margin-bottom: 1em;
     padding: 1em;
 }
 
 .contact {
-    max-width: 100%;
+    max-width: 60%;
     border-radius: 1em;
     position: relative;
     padding: 4em;
 }
+
 .url{
     text-decoration: none;
     color: black;
