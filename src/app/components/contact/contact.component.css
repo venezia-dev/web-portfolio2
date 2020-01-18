@@ -79,3 +79,10 @@ p {
 
     }
 }
+
+@media (max-width: 960px)  { 
+    h4 {
+        font-size: 4px;
+    }
+
+}
