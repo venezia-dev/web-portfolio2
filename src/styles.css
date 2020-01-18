@@ -15,13 +15,7 @@ body {
     padding: 1vh;
 }
 
-@media (max-width: 800px) {
-    body {
-        height: 100%;
-    }
-}
-
-@media (max-height: 800px) {
+@media (max-height: 960px) {
     body {
         height: 100%;
     }
