@@ -85,4 +85,11 @@ p {
         font-size: 4px;
     }
 
+    .contact {
+        max-width: 70%;
+        padding: 2em;
+        margin: 1em;
+    }
+
+
 }
