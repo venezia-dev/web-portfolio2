@@ -67,10 +67,21 @@ p {
     margin: 2px;
 }
 
+@media (min-width: 1300px) and (max-width: 1600px) { 
+    .stats {
+        font-size: 0.8em;
+        margin: 2px;
+    }
+    .github {
+        max-width: 50%;
+
+    }
+}
+
 
 @media (min-width: 960px) and (max-width: 1300px) { 
     .stats {
-        font-size: 1em;
+        font-size: 0.8em;
         margin: 2px;
     }
 
@@ -85,11 +96,18 @@ p {
         font-size: 4px;
     }
 
+    h2 {
+        margin: 1px;
+    }
+
     .contact {
         max-width: 70%;
         padding: 2em;
         margin: 1em;
     }
+    .github {
+        max-width: 40%;
 
+    }
 
 }

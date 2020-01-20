@@ -26,6 +26,7 @@ footer {
     line-height: 15px;
 }
 
+
 @media (max-width: 960px) { 
     .content-1 {
         height:100%;
@@ -39,3 +40,4 @@ footer {
     }
 
 }
+

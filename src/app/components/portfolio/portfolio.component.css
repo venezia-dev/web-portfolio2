@@ -126,6 +126,10 @@ h3 {
         white-space: nowrap;
         font-size: 0.8em;
     }
+
+    h2 {
+        margin: 5px;
+    }
 }
 
 
