@@ -17,6 +17,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { InfoComponent } from './components/info/info.component';
 import { AppsComponent } from './components/apps/apps.component';
 import { WebsComponent } from './components/dialogs/webs.component';
+import { Error404Component } from './components/error404/error404.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { WebsComponent } from './components/dialogs/webs.component';
     PortfolioComponent,
     InfoComponent,
     AppsComponent,
-    WebsComponent
+    WebsComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
