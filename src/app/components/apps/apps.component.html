@@ -7,7 +7,7 @@
     
     <div fxLayout="row wrap"  fxLayout.xs="column" fxLayoutAlign="center" class="webs">
         <mat-card class="web" fxFlex="20%" fxFlex.xs="100%" fxFlex.sm="100%" *ngFor="let app of apps">
-            <a href="{{app.url}}" matTooltip="Abrir Web" class="link" fxHide.lt-md fxHide.xl><i class="material-icons">
+            <a href="http://{{app.url}}/" matTooltip="Abrir Web" class="link" fxHide.lt-md fxHide.xl><i class="material-icons">
                 link
             </i></a>
             <div fxHide fxShow.lt-md>
@@ -31,7 +31,7 @@
 </div>
 
 <mat-card class="webR" *ngIf="isIndexRoute()">
-    <a href="{{appR.url}}" matTooltip="Abrir Web" class="link" fxHide.lt-md fxHide.xl><i class="material-icons">
+    <a href="http://{{appR.url}}/" matTooltip="Abrir Web" class="link" fxHide.lt-md fxHide.xl><i class="material-icons">
         link
     </i></a>
 
@@ -49,7 +49,7 @@
      <span class="year">{{appR.year}}</span>
  </mat-card-title>
  <mat-card-subtitle> 
-     <a href="{{appR.url}}" class="url" matTooltip="Abrir Web" fxHide fxShow.lt-md fxShow.xl >{{appR.title}}</a>
+     <a href="http://{{appR.url}}/" class="url" matTooltip="Abrir Web" fxHide fxShow.lt-md fxShow.xl >{{appR.title}}</a>
  </mat-card-subtitle>
 </mat-card>
 
