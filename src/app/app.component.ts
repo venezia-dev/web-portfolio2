@@ -16,7 +16,6 @@ import { trigger,transition,useAnimation } from '@angular/animations'
 export class AppComponent {
   title = 'veneziadev3';
 
-  public bounce: any;
   public state1: boolean =  true;
 
 

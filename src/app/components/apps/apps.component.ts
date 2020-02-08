@@ -12,7 +12,8 @@ export class AppsComponent implements OnInit {
 
   apps = [
     { "title": "CRUD Listado De Clientes", "url": "listado-clientes-crud-angular.herokuapp.com", "year": "2020", "img": "listadoclientep.png", "imgGrande": "appimg/listadocliente.png", "code1": "angularx30.png", "code2": "nodejsx30.png"},
-    { "title": "Calcular Presupuesto", "url": "calcular-presupuesto.herokuapp.com", "year": "2019", "img": "carlcularpresupuestop.png", "imgGrande": "appimg/carlcularpresupuesto.png", "code1": "angularx30.png", "code2": "nodejsx30.png" }
+    { "title": "Calcular Presupuesto", "url": "calcular-presupuesto.herokuapp.com", "year": "2019", "img": "carlcularpresupuestop.png", "imgGrande": "appimg/carlcularpresupuesto.png", "code1": "angularx30.png", "code2": "nodejsx30.png" },
+    { "title": "App Base Cuenta de Acceso + Perfil", "url": "angular-accesodecuenta-perfil.web.app", "year": "2020", "img": "accountprofilep.png", "imgGrande": "appimg/accountprofile.png", "code1": "angularx30.png", "code2":"firebasex30.png" }
   ]
 
   appR: any;
