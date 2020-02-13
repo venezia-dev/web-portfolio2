@@ -17,6 +17,7 @@ export class AppComponent {
   title = 'veneziadev3';
 
   public state1: boolean =  true;
+  public bounce: any;
 
 
   constructor(private router: Router) {}
